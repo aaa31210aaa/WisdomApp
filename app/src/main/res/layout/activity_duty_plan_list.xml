@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="tab.homedetail.emergencydetail.duty.DutyPlanList">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/MyToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/back">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="应急值班计划" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/search_view"></include>
+
+    <include layout="@layout/refresh_rv"></include>
+
+
+</RelativeLayout>

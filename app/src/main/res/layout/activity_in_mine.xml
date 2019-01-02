@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.hiddendetail.InMine">
+
+    <include layout="@layout/common_title"></include>
+
+    <!--<TextView-->
+    <!--android:id="@+id/inmine_zkdsrygl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="@dimen/x10"-->
+    <!--android:text="驻矿盯守人员管理" />-->
+
+    <!--<include layout="@layout/gray_line"></include>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y350"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/inmine_lxxzld"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="联系乡镇领导" />
+
+        <include layout="@layout/gray_line"></include>
+
+        <TextView
+            android:id="@+id/inmine_lxxzldgzxx"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="联系乡镇领导工作信息" />
+
+        <include layout="@layout/gray_line"></include>
+
+        <TextView
+            android:id="@+id/inmine_lxkzrr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="联系矿责任人" />
+
+        <include layout="@layout/gray_line"></include>
+
+        <TextView
+            android:id="@+id/inmine_lxkzrrgzxx"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="联系矿责任人工作信息" />
+
+        <include layout="@layout/gray_line"></include>
+
+        <TextView
+            android:id="@+id/inmin_zkzrr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="驻矿责任人" />
+
+
+        <include layout="@layout/gray_line"></include>
+
+        <TextView
+            android:id="@+id/inmine_zkzrrgzxx"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="驻矿责任人工作信息" />
+
+        <include layout="@layout/gray_line"></include>
+
+        <TextView
+            android:id="@+id/inmine_ajyxx"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="安监员信息" />
+
+        <include layout="@layout/gray_line"></include>
+
+        <TextView
+            android:id="@+id/inmine_ajygzxx"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="安监员工作信息" />
+
+        <include layout="@layout/gray_line"></include>
+    </LinearLayout>
+</LinearLayout>

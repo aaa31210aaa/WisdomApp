@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x150"
+    android:background="@drawable/headimg_left"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20">
+
+        <!--<utils.CircularImage-->
+            <!--android:id="@+id/left_view_head_img"-->
+            <!--android:layout_width="@dimen/x80"-->
+            <!--android:layout_height="@dimen/x80"-->
+            <!--android:layout_marginLeft="@dimen/x50"-->
+             <!--/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/dw_location"/>-->
+
+        <TextView
+            android:id="@+id/left_view_head_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/x15"
+            android:layout_marginLeft="@dimen/x10"
+            android:textColor="#fff"
+            android:text="" />
+    </LinearLayout>
+
+</RelativeLayout>

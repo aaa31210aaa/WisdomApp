@@ -1,0 +1,59 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="demo.yqh.wisdomapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            style="@style/MyToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/mine_tab">
+
+            <TextView
+                style="@style/ToolbarCenterTitle"
+                android:text="@string/home_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/homebanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x130"
+            android:layout_below="@+id/main_toolbar"
+            app:canLoop="true">
+
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/homeRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homebanner">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/id_nv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/banner"
+        app:menu="@menu/menu_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

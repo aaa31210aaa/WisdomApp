@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/changepwd"
+            android:icon="@drawable/chpwd"
+            android:title="@string/changepwd" />
+        <item
+            android:id="@+id/bbh"
+            android:icon="@drawable/about"
+            android:title="" />
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/signout"
+            android:title="@string/signout" />
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/dw_location"
+            android:title=""></item>
+    </group>
+</menu>

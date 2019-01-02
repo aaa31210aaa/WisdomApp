@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="tab.homedetail.hiddendetail.PhotoView">
+
+    <tab.homedetail.hiddendetail.PhotoViewPager
+        android:id="@+id/photo_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"></tab.homedetail.hiddendetail.PhotoViewPager>
+
+    <TextView
+        android:id="@+id/photo_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x10"
+        android:text=""
+        android:textColor="@color/blue_deep" />
+
+
+    <TextView
+        android:id="@+id/photo_view_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginRight="@dimen/x20"
+        android:padding="@dimen/x15"
+        android:text="返回"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

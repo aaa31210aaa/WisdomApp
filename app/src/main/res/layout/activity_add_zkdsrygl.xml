@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.hiddendetail.AddZkdsrygl">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/MyToolbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/back">
+
+        <TextView
+            style="@style/ToolbarCenterTitle"
+            android:text="添加驻矿盯守人员" />
+
+        <ImageView
+            android:id="@+id/add_zkdsrygl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/msubmit" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="人员类型" />
+
+        <TextView
+            android:id="@+id/add_zkdsrygl_paramname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:layout_weight="0.7"
+            android:background="@drawable/editext_bk"
+            android:hint="请选择人员类型"
+            android:padding="@dimen/x5"
+            android:text=""
+            android:textColorHint="@color/gray_deep" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="乡镇" />
+
+        <TextView
+            android:id="@+id/add_zkdsrygl_townshipname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:layout_weight="0.7"
+            android:background="@drawable/editext_bk"
+            android:hint="请选择乡镇街道"
+            android:padding="@dimen/x5"
+            android:text=""
+            android:textColorHint="@color/gray_deep" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/add_zkdsrygl_fusername"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:layout_weight="0.7"
+            android:background="@drawable/editext_bk"
+            android:hint="请选择人员姓名"
+            android:padding="@dimen/x5"
+            android:text=""
+            android:textColorHint="@color/gray_deep" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/add_zkdsrygl_linktel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:layout_weight="0.7"
+            android:background="@drawable/editext_bk"
+            android:hint="请填写联系电话"
+            android:padding="@dimen/x5"
+            android:text=""
+            android:textSize="@dimen/x13"
+            android:inputType="number"
+            android:textColorHint="@color/gray_deep" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="驻矿企业" />
+
+        <TextView
+            android:id="@+id/add_zkdsrygl_comname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:layout_weight="0.7"
+            android:background="@drawable/editext_bk"
+            android:hint="请选择驻矿企业"
+            android:padding="@dimen/x5"
+            android:text=""
+            android:textColorHint="@color/gray_deep"
+            android:textSize="@dimen/x13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="驻矿时间" />
+
+        <TextView
+            android:id="@+id/add_zkdsrygl_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:layout_weight="0.7"
+            android:background="@drawable/editext_bk"
+            android:drawableRight="@drawable/mdate"
+            android:hint=""
+            android:gravity="center"
+            android:textColorHint="@color/gray_deep" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:paddingTop="@dimen/x5"
+            android:text="备注" />
+
+        <EditText
+            android:id="@+id/add_zkdsrygl_memo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/x5"
+            android:layout_weight="0.7"
+            android:background="@drawable/editext_bk"
+            android:hint="请填写备注..."
+            android:padding="@dimen/x5"
+            android:minHeight="@dimen/x100"
+            android:gravity="top"
+            android:textSize="@dimen/x13"
+            android:textColorHint="@color/gray_deep" />
+    </LinearLayout>
+
+
+</LinearLayout>

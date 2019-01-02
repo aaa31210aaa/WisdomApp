@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/search_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x3"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/editext_bk"
+            android:completionThreshold="2"
+            android:drawableLeft="@drawable/msearch"
+            android:hint="@string/input_search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x100"
+            android:text=""
+            android:textColorHint="@color/gray_deep" />
+
+        <ImageView
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_item_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_rl"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

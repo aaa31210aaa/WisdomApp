@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.hiddendetail.AddWorkInfo">
+
+    <include layout="@layout/common_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingTop="@dimen/x5"
+                    android:text="检查人" />
+
+                <TextView
+                    android:id="@+id/add_workinfo_jcr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_bk"
+                    android:hint="请选择检查人"
+                    android:padding="@dimen/x5"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/x13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingTop="@dimen/x5"
+                    android:text="检查时间" />
+
+                <TextView
+                    android:id="@+id/add_workinfo_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_bk"
+                    android:drawableRight="@drawable/mdate"
+                    android:gravity="center"
+                    android:hint=""
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingTop="@dimen/x5"
+                    android:text="检查情况" />
+
+                <EditText
+                    android:id="@+id/add_workinfo_jcfxwt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_bk"
+                    android:gravity="top"
+                    android:hint="请填写检查情况..."
+                    android:minHeight="@dimen/x50"
+                    android:padding="@dimen/x5"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/x13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingTop="@dimen/x5"
+                    android:text="处理措施" />
+
+                <EditText
+                    android:id="@+id/add_workinfo_wtcljy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_bk"
+                    android:gravity="top"
+                    android:hint="请填写处理措施..."
+                    android:minHeight="@dimen/x50"
+                    android:padding="@dimen/x5"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/x13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingTop="@dimen/x5"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/add_workinfo_memo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x5"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_bk"
+                    android:gravity="top"
+                    android:hint="请填写备注..."
+                    android:minHeight="@dimen/x50"
+                    android:padding="@dimen/x5"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/x13" />
+            </LinearLayout>
+
+            <utils.MyGridView
+                android:id="@+id/add_workinfo_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/x5"
+                android:horizontalSpacing="@dimen/space_size"
+                android:verticalSpacing="@dimen/space_size"></utils.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="tab.homedetail.enterprisedetail.EnterpriseDetail">
+
+    <include layout="@layout/common_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/gray_bg"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/qyname" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_companyname"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/EstablishmentTime" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_setupdate"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/LegalRepresentative" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_legalperson"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/DocumentCode" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_certificates"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/EconomicType" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_jytypename"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/MajorIndustryAreas" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_mainfield"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/CompetentDepartment" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_chargedeptname"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/NumberOfEmployees" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_staffnum"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/RegisteredCapital" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_regcapital"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/mEnterpriseAddress" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_zcaddress"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/RiskLevel" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_risktypename"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/Qypf" />
+
+                    <TextView
+                        android:id="@+id/enterprisedetail_riskscore"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingTop="@dimen/x10">
+
+                <ImageView
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x10"
+                    android:text="@string/aqscxxgl"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_bmgl"
+                    style="@style/QyXxLj"
+                    android:text="@string/bmgl"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_qyzz"
+                    style="@style/QyXxLj"
+                    android:text="@string/qyzz"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_rygl"
+                    style="@style/QyXxLj"
+                    android:text="@string/rygl"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_aqsctr"
+                    style="@style/QyXxLj"
+                    android:text="@string/aqtr"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_gzzd"
+                    style="@style/QyXxLj"
+                    android:text="@string/Gzzd"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_wxy"
+                    style="@style/QyXxLj"
+                    android:text="@string/Wxy"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_zywsxx"
+                    style="@style/QyXxLj"
+                    android:text="@string/zyws"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_aqjc"
+                    style="@style/QyXxLj"
+                    android:text="@string/aqjc"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_yhxx"
+                    style="@style/QyXxLj"
+                    android:text="@string/Yhxx"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_xzzf"
+                    style="@style/QyXxLj"
+                    android:text="@string/xzzf"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <TextView style="@style/Kong" />
+
+                <TextView style="@style/Kong" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingTop="@dimen/x10">
+
+                <ImageView
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x10"
+                    android:text="@string/yjjyxxcx"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_tzsb"
+                    style="@style/QyXxLj"
+                    android:text="特种设备"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_yjjyxx"
+                    style="@style/QyXxLj"
+                    android:text="应急预案"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_yjwz"
+                    style="@style/QyXxLj"
+                    android:text="应急物资"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_yjyl"
+                    style="@style/QyXxLj"
+                    android:text="@string/yjyl"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/enterprise_detail_aqjypx"
+                    style="@style/QyXxLj"
+                    android:text="@string/aqpx"
+                    app:badge_dragable="false"
+                    app:badge_gravity="rightTop"
+                    app:badge_padding="3dp" />
+
+                <TextView style="@style/Kong" />
+
+                <TextView style="@style/Kong" />
+
+                <TextView style="@style/Kong" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

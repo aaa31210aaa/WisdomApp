@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    tools:context="tab.homedetail.emergencydetail.LeadershipEmergencyDetail">
+
+    <include layout="@layout/common_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarlayout"
+        android:background="@color/gray_bg">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/SgxqTitle"
+                    android:text="队伍名称" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_ranksname"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="队伍类型" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_rankstype"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="所在区域" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_areas"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="负责人" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_ownman"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="负责人联系方式" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_owntel"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="联系人" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_linkman"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="联系方式" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_linktel"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="人员数量" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_pepsum"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="主管单位" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_competentdetp"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="专场描述" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_specialtydesc"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="x坐标" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/emergency_detail_x"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/blue_deep" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="y坐标" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/emergency_detail_y"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/blue_deep" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="队伍状态" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/emergency_detail_ranksstatus"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/blue_deep" />-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="所处位置" />
+
+                <TextView
+                    android:id="@+id/emergency_detail_address"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="填报单位" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/emergency_detail_deptid"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/blue_deep" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="上级单位" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/emergency_detail_parentdeptid"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/blue_deep" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginTop="@dimen/x5"
+                android:text="备注：" />
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    android:id="@+id/emergency_detail_memo"
+                    style="@style/SgxqContent"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:gravity="top"
+                    android:minHeight="@dimen/x60"
+                    android:paddingLeft="@dimen/x5"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

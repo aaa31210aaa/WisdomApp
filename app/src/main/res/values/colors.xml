@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1195db</color>
+    <color name="colorPrimaryDark">#1195db</color>
+    <color name="colorAccent">#1195db</color>
+    <color name="dialog_color">#ff4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_deep">#888888</color>
+    <color name="login_btn_enable">#00FFFF</color>
+    <color name="login_btn_cantenable">#bebebe</color>
+    <color name="login_btn_disenable">#48D1CC</color>
+    <color name="transparent">#00000000</color>
+    <color name="tabtv_unselect">#bfbfbf</color>
+    <color name="tabtv_select">#2540b8</color>
+    <color name="btn_select">#3951ff</color>
+    <color name="main_color">#48D1CC</color>
+    <color name="gray_bg">#e7e7e7</color>
+    <color name="refresh_bg">#6fcdff</color>
+    <color name="indicator_text_color">#f57c00</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#29a729</color>
+    <color name="yhzs">#6495ED</color>
+    <color name="yhywc">#eeb422</color>
+    <color name="yhwwc">#EE2C2C</color>
+    <color name="photopicker_background">#181819</color>
+    <color name="blue_deep">#1C86EE</color>
+    <color name="violet">#ac2fe6</color>
+    <color name="rcjg">#45c8e6</color>
+    <color name="zkds">#0db482</color>
+    <color name="sgkb">#ddda1f</color>
+</resources>

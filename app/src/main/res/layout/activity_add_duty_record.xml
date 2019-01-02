@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.emergencydetail.duty.AddDutyRecord">
+
+    <include layout="@layout/common_title_img"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text="应急启动事件" />
+
+                <TextView
+                    android:id="@+id/add_duty_record_summaryname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/x13" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text="值班计划名称" />
+
+
+                <TextView
+                    android:id="@+id/add_duty_record_dutyPlanName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/x13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text="当班人" />
+
+
+                <EditText
+                    android:id="@+id/add_duty_record_recordbeonduty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="@dimen/x13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text="记录内容" />
+
+
+                <EditText
+                    android:id="@+id/add_duty_record_recordcontent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text="值班内容" />
+
+
+                <EditText
+                    android:id="@+id/add_duty_record_dutycontent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:text="处理情况" />
+
+                <EditText
+                    android:id="@+id/add_duty_record_handlecase"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x2"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="center"
+                    android:padding="@dimen/x5"
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/x13" />
+
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/x2"-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:background="@drawable/editext_yb"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:text="记录人" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/add_duty_record_recordman"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/x2"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:background="@drawable/editext_yb"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:textColorHint="@color/gray_deep"-->
+            <!--android:textSize="@dimen/x13" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/x2"-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:background="@drawable/editext_yb"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:text="记录时间" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/add_duty_record_recorddate"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/x2"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:background="@drawable/editext_yb"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:textColorHint="@color/gray_deep"-->
+            <!--android:textSize="@dimen/x13" />-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

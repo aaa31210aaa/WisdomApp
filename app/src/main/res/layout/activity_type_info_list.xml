@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="tab.homedetail.enforcementdetail.TypeInfoList">
+
+    <include layout="@layout/common_title"></include>
+
+    <include layout="@layout/search_view"></include>
+
+    <TextView
+        android:id="@+id/typeinfo_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_rl"
+        android:drawableRight="@drawable/xxjt"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/x5"
+        android:paddingLeft="@dimen/x28"
+        android:paddingTop="@dimen/x5"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/typeinfo_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_below="@+id/typeinfo_sp"
+        android:background="@color/gray_deep" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/typeinfo_line"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadmore="false"
+        app:srlPrimaryColor="@color/main_color">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

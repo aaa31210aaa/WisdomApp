@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.hiddendetail.WorkInfoDetail">
+
+    <include layout="@layout/common_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x5"
+        android:background="@color/gray_bg"
+        android:layout_below="@+id/appbarlayout">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/workinfo_detail_jcr"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查时间" />
+
+                <TextView
+                    android:id="@+id/workinfo_detail_jcsj"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查情况" />
+
+                <TextView
+                    android:id="@+id/workinfo_detail_jcfxwt"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="处理措施" />
+
+                <TextView
+                    android:id="@+id/workinfo_detail_wtcljy"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="备注" />
+
+                <TextView
+                    android:id="@+id/workinfo_detail_memo"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/workinfo_detail_recycler"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/x10"-->
+                <!--android:layout_marginTop="@dimen/x10">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/workinfo_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

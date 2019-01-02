@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="tab.homedetail.hiddendetail.NonCoal">
+
+    <include layout="@layout/search_view"></include>
+
+    <include layout="@layout/refresh_rv"></include>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/non_coal_fbt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/x20"
+        android:src="@drawable/add"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/main_color" />
+
+</RelativeLayout>

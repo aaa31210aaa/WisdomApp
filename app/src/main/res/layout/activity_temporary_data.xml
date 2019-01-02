@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/main_color"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.hiddendetail.TemporaryData">
+
+    <include layout="@layout/common_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="9">
+
+        <ListView
+            android:id="@+id/temporary_data_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+        <include layout="@layout/nodata_layout"></include>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/temporary_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x30"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/temporary_data_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/temporary_data_allcheck"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

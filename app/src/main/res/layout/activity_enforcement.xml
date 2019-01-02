@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.homedetail.Enforcement">
+
+    <include layout="@layout/common_title_img"></include>
+
+    <HorizontalScrollView
+        android:id="@+id/enforcement_hsv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/job_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></GridView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/enforcement_radio_group"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/enforcement_radiobtn_all"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/x30"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/home_radio"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:text="全部"-->
+    <!--android:textColor="@color/white" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/enforcement_radiobtn_dcl"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/x30"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/home_radio"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:text="待处理"-->
+    <!--android:textColor="@color/white" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/enforcement_radiobtn_dfc"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/x30"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/home_radio"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:text="待复查"-->
+    <!--android:textColor="@color/white" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/enforcement_radiobtn_clwb"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/x30"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/home_radio"-->
+    <!--android:button="@null"-->
+    <!--android:gravity="center"-->
+    <!--android:text="处理完毕"-->
+    <!--android:textColor="@color/white" />-->
+    <!--</RadioGroup>-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray_deep" />
+
+    <TextView
+        android:id="@+id/enforcement_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/xxjt"
+        android:gravity="center"
+        android:paddingBottom="@dimen/x5"
+        android:paddingLeft="@dimen/x28"
+        android:paddingTop="@dimen/x5"
+        android:background="@color/white"
+        android:spinnerMode="dropdown"
+        android:text="" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray_deep" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/job_rv"
+        android:background="@color/white"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadmore="false"
+        app:srlPrimaryColor="@color/main_color">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

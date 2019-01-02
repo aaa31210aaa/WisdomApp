@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    tools:context="tab.homedetail.safetydetail.SafetyPlan">
+
+    <include layout="@layout/common_title"></include>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/safety_plan_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_below="@id/appbarlayout"
+        android:layout_marginBottom="@dimen/x5" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/safety_plan_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/safety_plan_indicator">
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
